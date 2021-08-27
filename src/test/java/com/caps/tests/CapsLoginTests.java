@@ -94,7 +94,8 @@ public class CapsLoginTests extends BaseConfiguration {
 		try {
 			Thread.sleep(2000);
 		} catch (Exception e) {
-			System.out.println(e);
+			
+			log.info(e);
 		}
 
 		// //wes-home[@class='ng-star-inserted']/div/h1
@@ -132,6 +133,7 @@ public class CapsLoginTests extends BaseConfiguration {
 	public void closeBrowser() {
 
 		driver.close();
+		log.info("Browser Instance is closed successfully");
 	}
 
 }
